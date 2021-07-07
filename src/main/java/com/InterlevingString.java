@@ -1,8 +1,10 @@
 package com;
 
 public class InterlevingString {
+
     public static void main(String[] args) {
         System.out.println( isInterleave("aabcc","dbbca","aadbbcbcac"));
+        //InterlevingString interlevingString = new InterlevingString();
     }
     private static boolean isInterleave(String s1, String s2, String s3) {
         int i =0; //for s1
