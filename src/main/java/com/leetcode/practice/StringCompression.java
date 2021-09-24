@@ -3,9 +3,9 @@ package com.leetcode.practice;
 public class StringCompression {
     public static void main(String[] args) {
         //System.out.println(compress(new char[]{'a', 'a', 'b', 'b', 'c', 'c','c'}));
-       // System.out.println(compress(new char[]{'a'}));
-       // System.out.println(compress(new char[]{'a', 'a', 'a', 'b', 'b', 'c','c','c'}));
-        System.out.println(compress(new char[]{'a',  'b', 'c'}));
+        // System.out.println(compress(new char[]{'a'}));
+        // System.out.println(compress(new char[]{'a', 'a', 'a', 'b', 'b', 'c','c','c'}));
+        System.out.println(compress(new char[]{'a', 'b', 'c'}));
     }
 
     public static int compress(char[] chars) {
@@ -31,11 +31,11 @@ public class StringCompression {
                 }
 
                 len = 1;
-               start++;
+                start++;
 
             }
         }
-        if(chars[chars.length-1]==chars[chars.length-2])
+        if (chars[chars.length - 1] == chars[chars.length - 2])
             chars[start] = temp;
 
         if (len > 1) {
