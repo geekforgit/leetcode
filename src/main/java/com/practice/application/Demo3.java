@@ -13,7 +13,7 @@ public class Demo3 {
             return 0;
         }
 
-        return (binary%10)+2*Math.pow(binary,expo)+binaryCalculation(binary%10,expo++);
+        return (binary%10)+2*Math.pow(binary,expo)+binaryCalculation(binary/10,expo++);
 
 
     }
